@@ -18,3 +18,23 @@ print(obj1.x1)
 print(obj1.x2)
 
 obj1.x3()
+
+obj1.x4 = function()
+    local counter = 0
+    while(counter < 10) do
+        print(counter)
+        counter = counter + 1
+        if(counter >10) then
+            break
+        end
+    end
+end
+
+obj1.x4()
+--[[
+local obj1:function x5()
+    io.write("\n another way to create a method")    
+end
+
+obj1.x5()--]]
+print("\n\nstill need more pratice, can someone help me with that? ;)\n\n")
